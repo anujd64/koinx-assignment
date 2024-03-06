@@ -1,6 +1,7 @@
 'use client'
 import Image from 'next/image'
 import menu from "@/public/menu.svg";
+import cancel from "@/public/cancel.svg";
 import { useState } from 'react';
 export default function Nav() {
 
@@ -17,7 +18,7 @@ export default function Nav() {
         </div>
 
         <div className='lg:hidden flex w-full' >
-            <Image src={menu} alt='menu' onClick={toggle}  />
+            <Image src={open ? cancel :  menu } alt='menu' onClick={toggle}  />
         </div>
         </nav>
         {open && (

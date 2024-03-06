@@ -19,7 +19,6 @@ export default function PerformanceBar(
           alt=""
           width={15}
           height={15}
-          
           />
           <p>
             ${formatNumberWithCommas(currentPrice)}

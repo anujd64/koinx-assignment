@@ -60,7 +60,7 @@ export default function Sentiments() {
         <div className="w-36 h-36 bg-green-100 opacity-80 rounded-full flex items-center justify-center">
           <p className="text-3xl text-green-500 font-bold">76&#37;</p>
         </div>
-        <div className="lg:w-[60%] w-full flex flex-col items-center p-8 text-gray-400 text-sm">
+        <div className="lg:w-[60%] w-full flex flex-col items-center lg:p-8 p-2 text-gray-400 text-sm">
           <ProgressBar
             textStart="Buy"
             percentage={76}
