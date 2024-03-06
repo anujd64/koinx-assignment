@@ -31,20 +31,22 @@ export default async function HeroCoinDetails({
           </div>
 
           <div className="py-4 flex-col flex gap-2">
-            <div className="flex flex-row gap-4 items-center">
+            <div className="flex flex-row flex-wrap gap-4 items-center">
               <p className="lg:text-3xl text-3xl font-bold">
                 ${" "}
                 {formatNumberWithCommas(
                   coinDetails.market_data.current_price.usd
                 )}
               </p>
+              <div className="flex flex-row gap-4 items-center">
               <PriceChangePercentageTag
                 priceChangePercentage={
                   coinDetails.market_data
-                    .price_change_percentage_24h_in_currency.usd
+                  .price_change_percentage_24h_in_currency.usd
                 }
-              />
+                />
               <p className="text-slate-400">(24H)</p>
+              </div>
             </div>
             <p className="text-lg font-semibold">
               ₹{" "}
