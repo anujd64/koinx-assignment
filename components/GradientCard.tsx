@@ -10,7 +10,7 @@ export default function GradientCard({
   cardImage,
 }: GradientCardProps) {
   return (
-    <div className="first:bg-gradient-to-br first:from-green-400 first:to-blue-700 last:bg-gradient-to-br last:from-orange-300 last:to-red-600 lg:w-1/2 w-full min-w-[250px] max-w-[500px] p-3 flex flex-row lg:gap-8 gap-6 rounded-lg object-contain">
+    <div className="first:bg-gradient-to-br first:from-green-400 first:to-blue-700 last:bg-gradient-to-br last:from-orange-300 last:to-red-600 w-full max-w-[500px] p-3 flex flex-row lg:gap-8 gap-6 rounded-lg object-contain">
       <Image
         src={cardImage}
         className="rounded-lg lg:h-[150px] h-[120px]  lg:w-[150px] w-[120px]  object-cover"
