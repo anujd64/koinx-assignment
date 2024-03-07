@@ -1,3 +1,4 @@
+'use client'
 import { Coin } from "@/utils/types"
 import PriceChangePercentageTag from "./PriceChangePercentageTag";
 
