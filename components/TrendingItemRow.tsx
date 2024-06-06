@@ -7,8 +7,8 @@ type TrendingItemRowProps = {
 };
 export default function TrendingItemRow({ coin }: TrendingItemRowProps) {
   return (
-    <div className="flex flex-row gap-4 w-full p-2 justify-start text-center items-center">
-        <a href={`/cryptocurrencies/${coin.item.id}`}>
+    <a href={`/cryptocurrencies/${coin.item.id}`}>
+          <div className="flex flex-row gap-4 w-full p-2 justify-start text-center items-center">
         <div className="w-12 h-12 bg-gray-100  ">
           <Image
             src={coin.item.large}
@@ -31,7 +31,7 @@ export default function TrendingItemRow({ coin }: TrendingItemRowProps) {
             }
           />
         </div>
-      </a>
     </div>
+      </a>
   );
 }
